@@ -218,5 +218,5 @@ function firstFourthAnswer() {
 }
 
 function clickedButton() {
-    window.location.href = ""
+    window.location.href = "https://ahyesvery.github.io/ValentinesDay/"
 }
