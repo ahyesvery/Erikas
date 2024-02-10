@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quiz</title>
+    <style>
+        #title {
+            transition: opacity 0.5s ease-in-out;
+        }
+        #first-question {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src = "scripts.js"></script>
+</head>
+<body>
+    <div id = "container">
+        <h1 id = "title">LAAABAS</h1>
+        <script>
+            const title = document.getElementById("title");
+            setTimeout(function() {
+                title.style.opacity = 0;
+            }, 1000);
+            setTimeout(function() {
+                title.style.opacity = 1;
+                title.textContent = "SIEK TIEK UZTRUKAU PRIE SITO, TAI PLSSS PABAIK VISKA"
+            }, 1500);
+            setTimeout(function() {
+                title.style.opacity = 0;
+            }, 5000);
+            setTimeout(function() {
+                title.style.opacity = 1;
+                title.textContent = "ASIUUU❤️"
+            }, 5500);
+            setTimeout(function() {
+                title.style.opacity = 0;
+            }, 6500);
+            setTimeout(function() {
+                title.style.opacity = 1;
+                title.textContent = "HOW WELL DO YOU KNOW ME?"
+            }, 7000);
+        </script>
+        <div id = "first-question">
+            <div class="first-first" onclick="firstFirstAnswer()">
+            </div>
+            <div class="first-second" onclick="firstSecondAnswer()">
+            </div>
+            <div class="first-third" onclick="firstThirdAnswer()">
+            </div>
+            <div class="first-fourth" onclick="firstFourthAnswer()">
+            </div>
+        </div>
+        <script>
+            const questions = document.getElementById("first-question")
+            setTimeout(function() {
+            questions.style.opacity = 1;
+            questions.style.pointerEvents = "all";
+            }, 7000);
+        </script>
+        <div class = "button-container">
+            <button id = "button" onclick="clickedButton()">CLICK ME</button>
+        </div>
+    </div>
+</body>
