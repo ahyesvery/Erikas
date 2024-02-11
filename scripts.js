@@ -69,7 +69,7 @@ function endQuiz() {
     const quizContainer = document.getElementById("first-question")
     const title = document.getElementById("title");
     const button = document.getElementById("button")
-    title.textContent  = `ASIUUU, SURINKAI ${score} IS 10`
+    title.textContent  = `ASIUUU, SURINKAI ${score} IS 10, TADDD.....`
     if (score <= 5) {
         setTimeout(function() {
             fadeOut("title")
